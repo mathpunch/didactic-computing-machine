@@ -8,20 +8,26 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
             background-color: #1a1a1a; /* Dark background */
             color: white; /* White text */
-            overflow: hidden; /* Prevent scrolling */
+            padding: 20px; /* Add some padding */
         }
         h1 {
-            margin: 20px; /* Space around the header */
+            margin: 20px 0; /* Space around the header */
             color: white; /* White text color for header */
             font-size: 2em; /* Increase font size for visibility */
             text-align: center; /* Center the text */
             white-space: nowrap; /* Prevent text wrapping */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto; /* Allow vertical scrolling */
+            max-height: 80vh; /* Limit height to allow scrolling */
+            width: 100%; /* Full width */
         }
         button {
             margin: 10px 0; /* Spacing between buttons */
@@ -31,6 +37,8 @@
             padding: 10px 20px; /* Padding for buttons */
             cursor: pointer; /* Change cursor to pointer */
             transition: background-color 0.3s; /* Transition effect */
+            width: 100%; /* Make buttons full width */
+            max-width: 300px; /* Limit button width */
         }
         button:hover {
             background-color: rgba(255, 255, 255, 0.1); /* Lighten button on hover */
@@ -42,20 +50,22 @@
 </head>
 <body>
     <h1>Welcome To MathPunch!</h1> <!-- Clear header with text -->
-    <button onclick="window.location.href='https://mathpunch.github.io/kitty/';">Stickmanhook</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/dog/';">Super Mario 64</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/bear/';">Tiny Fishing</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/snake/';">Tap Tap Shots</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/shark/';">Drive Mad</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/zebra/';">Emulator JS</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/turtle/';">Wordle Unlimited</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/doggy/';">Fruit Ninja</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/fox/';">Rooftop Snipers</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/bat/';">Tunnel Rush</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/wolf/';">Burrito Bison</button>
-    <button onclick="window.location.href='https://mathpunch.github.io/monkey/';">Trash Truck Simulator</button>
+    <div class="button-container">
+        <button onclick="window.location.href='https://mathpunch.github.io/kitty/';">Stickmanhook</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/dog/';">Super Mario 64</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/bear/';">Tiny Fishing</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/snake/';">Tap Tap Shots</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/shark/';">Drive Mad</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/zebra/';">Emulator JS</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/turtle/';">Wordle Unlimited</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/doggy/';">Fruit Ninja</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/fox/';">Rooftop Snipers</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/bat/';">Tunnel Rush</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/wolf/';">Burrito Bison</button>
+        <button onclick="window.location.href='https://mathpunch.github.io/monkey/';">Trash Truck Simulator</button>
 
-    <h2>Games For Emulator JS</h2> <!-- Section header -->
-    <button onclick="window.location.href='https://github.com/ixlmathgg/flashy/raw/main/Mario%20Kart.zip';">DS: Mario Kart</button>
+        <h2>Games For Emulator JS</h2> <!-- Section header -->
+        <button onclick="window.location.href='https://github.com/ixlmathgg/flashy/raw/main/Mario%20Kart.zip';">DS: Mario Kart</button>
+    </div>
 </body>
 </html>
