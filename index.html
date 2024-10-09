@@ -64,11 +64,13 @@
             padding: 20px;
             border-radius: 10px;
             z-index: 1000; /* Bring it above other elements */
+            text-align: center; /* Center text in the menu */
         }
         .theme-selector button {
             margin: 5px;
-            color: black; /* Button text color */
-            background-color: white; /* Button background color */
+            color: white; /* White text for buttons in theme selector */
+            background-color: transparent; /* Transparent background for buttons */
+            border: 2px solid white; /* White border */
         }
     </style>
 </head>
@@ -114,7 +116,7 @@
     </div>
 
     <div class="theme-selector" id="themeSelector">
-        <h2>Select Theme</h2>
+        <h2 style="color: white;">Select Theme</h2> <!-- White text for the header -->
         <button onclick="setTheme('blue')">Blue</button>
         <button onclick="setTheme('red')">Red</button>
         <button onclick="setTheme('purple')">Purple</button>
