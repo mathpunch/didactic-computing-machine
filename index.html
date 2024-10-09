@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathPunch</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: white; /* White text */
+        }
+        button {
+            margin: 10px 0; /* Spacing between buttons */
+            background-color: transparent; /* Transparent background */
+            color: white; /* White text color for buttons */
+            border: 2px solid white; /* White border */
+            padding: 10px 20px; /* Padding for buttons */
+            cursor: pointer; /* Change cursor to pointer */
+            transition: background-color 0.3s; /* Transition effect */
+        }
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Lighten button on hover */
+        }
+    </style>
+    <script>
+        function redirectWithPopup() {
+            alert("This Website is in Beta!!");
+            window.location.href = 'https://mathpunch.us.to';
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to MathPunch!</h1>
+    <button onclick="window.location.href='https://github.com/mathpunch/ixlmathgg';">Click Me</button>
+    <button onclick="redirectWithPopup();">NEW WEBSITE</button>
+    <button onclick="window.location.href='https://sites.google.com/view/mathpunch';">Chatting</button> <!-- New Chatting button -->
+    <button onclick="window.location.href='https://mathpunch.github.io/kitty/';">Stickmanhook</button> <!-- New Stickmanhook button -->
+</body>
+</html>
